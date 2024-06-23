@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        border: 2px solid black;
+        position: relative;
+    }
+    .child{
+        height: 150px;
+        width: 150px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    
+    }
+    #child1{
+        position: fixed;
+    bottom: 1rem;
+    right: 2rem;   
+    border-radius: 100%; 
+    width:50px ;
+    height: 50px;
+    }
+    #child2{
+        position: sticky;
+        top: 0;
+        background-color: rgb(33, 55, 74);
+        width: 100%;
+    }
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 30%;
+}
+#child3{
+    position: relative;
+    top: 6rem;
+    background-color: aquamarine;
+}
+#child5{
+    position: absolute;
+    background-color: rgb(211, 162, 162);
+    color: wheat;
+    right: 0;
+}
+</style>
+<!-- font_awesome_icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <h2>Position Types</h2>
+    <ol>
+        <li>Static(default)</li>
+        <li>Absolute(realtive to the parent)</li>
+        <li>Relative(its normal)</li>
+        <li>Fixed(scroll fixed)</li>
+        <li>Sticky(scroll stick)</li>
+    </ol>
+    <div class="box">
+        <div class="child" id="child1"> <i class="fa-solid fa-up-long"></i></div>
+        <div class="child" id="child2">
+            
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>Address</li>
+            </ul>
+        
+        </div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+        <div class="child" id="child5">5</div>
+        <div class="child" id="child6">6</div>
+        <div class="child" id="child7">7</div>
+        <div class="child" id="child8">8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        background-color: green;
+        height:150px ;
+        width:150px ;
+        /* display: none; */
+        position: relative;
+        top: 50px;
+        /* z-index: 50; */
+        /* transition: all 1s; */
+        transition-property:all ;
+        transition-duration:1s ;
+        /* transition-delay: 1s ; */
+        /* transition-timing-function: ease-in-out; */
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .box:hover{
+        border: 2px solid black;
+cursor: pointer;  
+background-color: bisque;
+opacity: 0.2; 
+border-radius: 100%;
+
+    }
+
+    .box1{
+        background-color: rgb(220, 227, 23);
+        height:150px ;
+        width:150px ;
+        z-index: 60;
+    }
+    .parent{
+        border:solid black;
+        height: 300px;
+            }
+</style>
+</head>
+<body>
+<div class="parent">
+    <div class="box"></div>
+    <!-- <div class="box1"></div> -->
+</div>
+    
+</body>
+</html>

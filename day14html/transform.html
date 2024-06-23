@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .parent{
+        height: 150px;
+        width:  1150px;
+        background-color: rgb(129, 80, 20);
+        box-sizing: border-box;
+        
+    }
+    .box2{
+        height: 150px;
+        width: 150px;
+        background-color: rgb(89, 206, 11);
+        align-content: center;
+text-align: center;
+margin: 12rem;
+transition: all 2s;
+}
+
+.box2:hover
+{
+transform: translate(100px);
+}
+    
+    .box{
+        height: 150px;
+        width: 150px;
+        background-color: aqua;
+        /* transform: rotate(20deg); */
+        margin: 12rem;
+        transition: all 2s;
+align-content: center;
+text-align: center;
+/* font-size: 3rem; */
+
+    }
+    .box:hover{
+        /* transform: rotate(360deg); */
+        cursor: pointer;
+        /* transform:scale(2) ; */
+        /* transform: skew(30deg); */
+        transform: translate(100px,100px);
+    }
+</style>
+</head>
+<body>
+    <!-- <div class="parent"> -->
+        <div class="box">
+<h1>transition</h1>
+    </div>
+    <div class="box2">
+        <h1>transition</h1>
+    </div>
+<!-- </div> -->
+    
+</body>
+</html>
