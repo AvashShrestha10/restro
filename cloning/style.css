@@ -1,0 +1,35 @@
+.parent{
+    display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+#allchilduni{
+    /* background-color: aqua; */
+    width: 300px;
+    height: 380px;
+box-shadow: 0 0 45px rgba(0, 0, 0, .08);;
+}
+#man{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    margin-top: 15%;
+}
+.forimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fullname{
+    font-weight: 600;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+
+}
+.designation{
+    /* font-weight: 600; */
+    font-size: 15px;
+    /* font-family: cursive; */
+    text-align: center;
+}
